@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Reservation Hotel Room</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Reservation Hotel Room</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend><b>Personal Data</b></legend>
+                <ol>
+                    <li>
+                        <label for="name">Name:</label><br />
+                        <input type="text" id="name" name="name" size="25" />
+                    </li>
+                    <li>
+                        <label for="gender">Gender:</label><br />
+                        <input type="text" id="gender" name="gender" size="25" />
+                    </li>
+                    <li>
+                        <label for="email">Email Address:</label><br />
+                        <input type="text" id="email" name="email" size="25" />
+                    </li>
+                    <li>
+                        <label for="telp">Telp Number:</label><br />
+                        <input type="text" id="telp" name="telp" size="25" />
+                    </li>
+                </ol>
+            </fieldset>
+
+            <h3>Reservation Room Form</h3>
+            <ol>
+                <li>
+                    <label for="reservation_name">Reservation Name:</label><br />
+                    <input type="text" id="reservation_name" name="reservation_name" size="25" />
+                </li>
+                <li>
+                    <label for="booking_date">Booking Date:</label><br />
+                    <input type="text" id="booking_date" name="booking_date" size="25" />
+                </li>
+                <li>
+                    <label for="room_type">Room Type:</label><br />
+                    <select id="room_type" name="room_type">
+                        <option value="deluxe">Deluxe</option>
+                        <option value="superior">Superior</option>
+                        <option value="standard">Standard</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="bed_type">Bed Type:</label><br />
+                    <select id="bed_type" name="bed_type">
+                        <option value="single">Single bed</option>
+                        <option value="double">Double bed</option>
+                    </select>
+                </li>
+                <li>
+                    <span>Breakfast:</span><br />
+                    <input type="radio" id="with" name="breakfast" value="with" /> 
+                    <label for="with">With Breakfast</label>
+                    <input type="radio" id="without" name="breakfast" value="without" /> 
+                    <label for="without">Without Breakfast</label>
+                </li>
+            </ol>
+
+            <fieldset>
+                <legend><b>Payment</b></legend>
+                <ol>
+                    <li>
+                        <label for="checkin_date">Check-in Date:</label><br />
+                        <input type="text" id="checkin_date" name="checkin_date" size="25" />
+                    </li>
+                    <li>
+                        <label for="checkout_date">Check-out Date:</label><br />
+                        <input type="text" id="checkout_date" name="checkout_date" size="25" />
+                    </li>
+                    <li>
+                        <label for="payment_method">Payment Method:</label><br />
+                        <select id="payment_method" name="payment_method">
+                            <option value="cash">Cash</option>
+                            <option value="credit">Credit Card</option>
+                            <option value="transfer">Transfer</option>
+                        </select>
+                    </li>
+                </ol>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Submit" />
+            </p>
+        </form>
+    </div>
+</body>
+</html>
